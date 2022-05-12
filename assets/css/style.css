@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    height: 70px;
+    background-color: #da062e;
+}
+.header{
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icone-menu,
+.icone-search{
+    flex: 1;
+    display: flex;
+    width: 50px;
+    justify-content: center;
+}
+.icone-menu img,
+.icone-search img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+   
+}
+.logo{
+    flex: 8;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+.logo img{
+    width: 150px;
+    height: 65px;
+}
+
+
+
+.letrasContainer{
+    background: #1a1a1a;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.mwidth {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.letrasContainer ul{
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+   
+}
+
+.letrasContainer ul li{
+    display: list-item;
+    list-style-type: none;
+    
+}    
+.letrasContainer ul li a{
+    padding: 15px 13.5px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+}
+.letrasContainer ul li a:hover{
+    color: #da062e;
+}
+#sub_header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.aviso_box{
+    display: flex;
+    background-color: #27ae60;
+    align-items: center;
+    height: 37px;
+    max-width: 1280px;
+    margin: auto;
+    
+}
+.logo-aviso{
+    position: relative;
+    background-color: #da062e;
+    width: 70px;
+    height: 100%;
+}
+.aviso_box .logo_icon{
+    background-image: url('../../assets/images/aviso.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #da062e;
+}
+.aviso_box_content{
+    color: #FFFFFF;
+    width: calc(100%-70px);
+}
+.aviso_box_content span{
+    margin-left: 10px;
+}
+main{
+    flex: 1;
+}
+nav{
+    display: flex;
+}
+/* Animação*/
+.Menu-animation{
+    animation-name:Menu-animation;
+    animation-duration: 0.5s;
+}
+@keyframes Menu-animation {
+    from {opacity: .1}
+    to {opacity: 1} 
+}
+
+
+
+
+.most-views{
+  display: block;
+}
+.section-body{
+    margin: auto;
+    max-width: 1280px;
+}
+.box_title{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 10px auto;
+    max-width: 1280px;
+}
+.main-animes{
+    overflow: hidden;
+}
+.main-animes .slider--controls{
+    width: 100%;
+    max-width: 1280px;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+.main-animes .slider--control{   
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main-animes .slider--control img{
+    width: 25px;
+    color: #da062e;
+}
+.main-animes .sliders{
+    display: grid;
+    grid-template-columns: repeat(13, 210px);
+    transition: all ease .5s;
+}
+.main-animes .anime-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    color: rgb(255, 248, 248);
+}
+
+.anime-area .box_card_principal{
+    width: 200px;
+    height: 276px;
+    background-color:rgb(255, 255, 255);
+}
+.anime-area h3{
+    width: 200px;
+    height: auto;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #FFF;
+}
+
+
+
+
+
+nav{
+    display: flex;
+}
+.menuHeader{
+    display: none;
+    width: 275px;
+    margin-left: 0;
+    background-color: #1e1e1e;
+    overflow:hidden;
+    padding: 10px 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999999999;
+    transition: all ease .5s;
+}
+.menulogo{
+       display: flex;
+       justify-content: left;
+       align-items: center;
+       background-image: url(../images/logo-menu.png);
+       background-size: 175px;
+       width: 175px;
+       height: 75px;  
+}
+.menuClose{
+    background-image: url(../images/close-menu.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 30px;
+    right: 29px;
+    top: 35px;
+    cursor: pointer;
+}
+.menuHeader ul,
+.menuHeader li{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.menuHeader ul{
+    margin-top: 20px;
+    padding: 10px 5px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #1e1e1e;
+}
+.menuHeader ul li{
+    display: block;
+    padding-left: 5px;
+    border-top: 1px solid #FFF;
+}
+.menuHeader ul li a{
+    height: 45px;
+    flex-direction: row-reverse;
+    justify-content: left;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-items: center;
+    
+}
+.menuHeader ul li a span{
+    font-size: 14px;
+    font-weight: 700;
+}
+.icon-home{
+    background: url(../images/home.png)
+}
+.icon-generos{
+    background: url(../images/generos.png);
+}
+.icon-discord{
+    background: url(../images/contato.png);
+}
+.menuHeader ul li i{
+    background-size: 36px;
+    width: 36px;
+    height: 36px;
+}
+.menuHeader ul li a{
+    padding: 5px 10px 5px 30px;
+}
+
+
+.anime-week{
+    margin-top: 20px;
+}
+.box_title_week{
+    display: flex;
+    justify-content: center;
+    color: #EEE;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 18px;
+}
+.main-animes .slide-week{
+    width: 1280px;
+    height: 100%;
+    display: inline-block;
+}
+.main-animes .anime-area-week{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
+}
+.box_card_week{
+    display: block;
+    text-align: center;
+}
+.box_card_week .box_card_principal{
+    width: 315px;
+    height: 170px;
+}
+.box_card_week .box_card_principal img{ 
+    width: 100%;
+    height: auto;
+}
+.box_card_week .box_card_content{
+    width: 310px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+@media (min-width:850px) and (max-width:1024px) {
+    .main-animes .anime-area-week{
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr);
+        display:grid;
+        justify-content: center;
+        align-self: center;
+    }
+    .box_card_week .box_card_principal{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .box_card_week .box_card_content{
+        width: 437px;
+    }
+}
+@media (min-width:445px) and (max-width:849px) {
+    .main-animes .anime-area-week{
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr);
+        display:grid;
+        justify-content: center;
+    }
+    .box_card_week .box_card_principal{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .box_card_week .box_card_content{
+        width: 220px;
+        margin: auto;
+    }
+}
+@media (max-width:444px) {
+    .main-animes .anime-area-week{
+        width: 100vw;
+        grid-template-columns: repeat(1, 1fr);
+        display:grid;
+        justify-content: center;
+    }
+    .box_card_week .box_card_principal{
+        width: 65%;
+        height: auto;
+        margin: auto;
+    }
+    .box_card_week .box_card_content{
+        width: 280px;
+        margin: auto;
+    }
+}
+
+
+
